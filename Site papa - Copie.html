@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>Mr. Jouhnyd Chaibeddra - Psychiatre à Saint-Martin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+        body {
+            font-family: Lato, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #F0F0F0;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            color: #333333;
+            font-size: 36px;
+        }
+        .header p {
+            color: #666666;
+            font-size: 18px;
+        }
+        .nav {
+            background-color: #333333;
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav a {
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            text-decoration: none; 
+       }  
+       .nav a:hover { 
+           background-color :#444444; 
+           transform :scale(1.1); 
+           transition :all 0.3s; 
+       }  
+       .content { 
+           margin :20px auto; 
+           max-width :800px;  
+       }  
+       .content h2 { 
+           color :#333333;  
+           font-size :24px;  
+       }  
+       .content p { 
+          color:#666666;  
+          font-size :16px;  
+          line-height :1.5;  
+      }   
+      .footer { 
+          background-color :#F0F0F0; 
+          padding :20px; 
+          text-align :center;  
+      }  
+      .footer p { 
+          color :#666666; 
+          font-size :14px;   
+      }  
+
+    </style>
+</head>
+<body>
+    <div class="header">
+      <h1>Mr. Jouhnyd Chaibeddra</h1>
+      <p>Médecin psychiatre à Saint-Martin</p>
+    </div>
+
+    <div class="nav">
+      <a href="#" id="home">Accueil</a>
+      <a href="#" id="presentation">Présentation</a>
+      <a href="#" id="services">Services</a>
+      <a href="#" id="contact">Contact</a>
+    </div>
+
+    <div class="content" id="content">
+      
+<p>Bienvenue sur le site de Mr. Jouhnyd Chaibeddra, médecin psychiatre à Saint-Martin. Sur ce site, vous pourrez découvrir qui je suis, quels sont mes services et comment me contacter. Vous pourrez également prendre rendez-vous en ligne facilement et rapidement. Ce site a pour but de vous informer sur ma pratique professionnelle et de vous aider à trouver le soutien dont vous avez besoin.</p>
+
+    </div>
+
+    <div class="footer">
+      <p>© 2023 Mr. Jouhnyd Chaibeddra - Tous droits réservés</p>
+    </div>
+
+<script>
+
+// Définir les variables pour les éléments du DOM
+var home = document.getElementById("home");
+var presentation = document.getElementById("presentation");
+var services = document.getElementById("services");
+var contact = document.getElementById("contact");
+var content = document.getElementById("content");
+
+// Définir les fonctions pour changer le contenu de la div content
+function showHome() {
+  content.innerHTML = "<p>Bienvenue sur le site de Mr. Jouhnyd Chaibeddra, médecin psychiatre à Saint-Martin. Sur ce site, vous pourrez découvrir qui je suis, quels sont mes services et comment me contacter. Vous pourrez également prendre rendez-vous en ligne facilement et rapidement. Ce site a pour but de vous informer sur ma pratique professionnelle et de vous aider à trouver le soutien dont vous avez besoin.</p>";
+}
+
+function showPresentation() {
+  content.innerHTML = "<h2>Qui suis-je ?</h2><p>Je suis Mr. Jouhnyd Chaibeddra, médecin psychiatre. Je vous accueille dans mon cabinet à Saint-Martin pour vous aider à surmonter vos difficultés psychologiques et émotionnelles.</p><p>Jesuis diplômé de la faculté de médecine de Strasbourg et j'ai effectué ma formation en psychiatrie au CHU de Hautepierre. Je suis également titulaire d'un diplôme universitaire en psychotraumatologie et en thérapie cognitive et comportementale.</p><p>Je vous propose une écoute attentive et bienveillante, ainsi qu'une prise en charge adaptée à votre situation et à vos besoins. Je travaille en collaboration avec d'autres professionnels de santé (médecins généralistes, psychologues, infirmiers, etc.) pour vous offrir un suivi optimal.</p>";
+}
+
+function showServices() {
+  content.innerHTML = "<h2>Quels sont mes services ?</h2><p>Je vous propose des consultations individuelles ou de couple pour vous accompagner dans la résolution de vos problèmes personnels ou relationnels. Je peux vous aider à faire face à diverses situations difficiles telles que le stress, l'anxiété, la dépression, le burn-out, les traumatismes, les phobies, troubles obsessionnels compulsifs (TOC), troubles du comportement alimentaire (TCA), addictions, troubles bipolaires, troubles de la personnalité, etc.</p><p>Je vous propose également des séances de thérapie cognitive et comportementale (TCC) qui visent à modifier les pensées et les comportements négatifs qui entretiennent vos difficultés. Les TCC sont des thérapies brèves, validées scientifiquement et efficaces pour traiter de nombreux troubles psychiques.</p><p>Enfin, je vous propose des séances de relaxation et de méditation pleine conscience qui vous permettront de vous détendre, de réduire votre stress et d'améliorer votre bien-être.</p>";
+}
+
+function showContact() {
+  content.innerHTML = "<h2>Comment me contacter ?</h2><p>Vous pouvez me contacter par téléphone au 06 12 34 56 78 ou par email à l'adresse jouhnyd.chaibeddra@psychiatre.fr. Vous pouvez également prendre rendez-vous en ligne en cliquant sur le bouton ci-dessous.</p><a href='https://www.doctolib.fr/psychiatre/marigot/jouhnyd-chaibeddra/booking/new-patient' style='display: block; width: 200px; height: 50px; background-color: #333333; color: white; font-size: 18px; text-align: center; line-height: 50px; text-decoration: none; margin: 20px auto;'>Prendre rendez-vous</a><p>Mon cabinet se situe au 12 rue de la République à Saint-Martin. Mes horaires d'ouverture sont du lundi au vendredi de 9h à 18h.</p>";
+}
+
+// Ajouter les écouteurs d'événements pour les liens du menu
+home.addEventListener("click", showHome);
+presentation.addEventListener("click", showPresentation);
+services.addEventListener("click", showServices);
+contact.addEventListener("click", showContact);
+
+</script>
+</body>
+</html>
